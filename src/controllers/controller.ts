@@ -26,7 +26,6 @@ export const registerAstrologer = async (req: Request, res: Response) => {
 export const astrologersList = async (req: Request, res: Response) => {
   try {
     const astrologers = await AstrologerModel.find();
-    console.log(astrologers);
     res.status(200).json(astrologers);
   } catch (error) {
     res.status(500).json({ error: "Internal Server Error" });

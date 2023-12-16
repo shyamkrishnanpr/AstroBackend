@@ -60,7 +60,7 @@ Run the following command to start the Node Js Backend server.
 
 ## API Reference
 
-#### POST API to Register Astrologer
+#### POST API to Register Astrologer:
 
 ```http
   POST /api/astrologers/register
@@ -73,6 +73,31 @@ Run the following command to start the Node Js Backend server.
 | `email` | `string` | **Required**. Astrologer's email address |
 | `languages` | `array of string` | **Required**. Languages |
 | `specialties` | `array of string` | **Required**. Specialties. |
+
+
+
+#### GET API to List All Astrologers:
+
+```http
+  GET /api/astrologers
+```
+
+
+####  PUT API to Edit Astrologer Data:
+
+```http
+  PUT /api/astrologers/:id
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `id(in URL)` | `string` | **Required**. ID of the astrologers |
+| `name` | `string` | **Required**. Astrologer's name |
+| `gender` | `string` | **Required**. Astrologer's gender. |
+| `email` | `string` | **Required**. Astrologer's email address |
+| `languages` | `array of string` | **Required**. Languages |
+| `specialties` | `array of string` | **Required**. Specialties. |
+
 
 
 #### Conclusion
