@@ -12,5 +12,5 @@ const astrologerSchema = new mongoose_1.default.Schema({
     languages: { type: [String], required: true },
     specialties: { type: [String], required: true },
 });
-exports.AstrologerModel = mongoose_1.default.model('Astrologer', astrologerSchema);
+exports.AstrologerModel = mongoose_1.default.model("Astrologer", astrologerSchema);
 //# sourceMappingURL=astrolegerSchema.js.map

@@ -11,6 +11,6 @@ router.post("/api/astrologers/register", registerAstrologer);
 
 router.get("/api/astrologers", astrologersList);
 
-router.put("/api/astrologers/:id",editAstrologer)
+router.put("/api/astrologers/:id", editAstrologer);
 
 export default router;

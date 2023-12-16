@@ -17,7 +17,7 @@ const mongoose_1 = __importDefault(require("mongoose"));
 mongoose_1.default.set("strictQuery", false);
 const connectDatabase = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const uri = yield mongoose_1.default.connect("mongodb://127.0.0.1:27017/astroData");
+        const uri = yield mongoose_1.default.connect(process.env.DATABASE_URL);
         console.log("database connected");
     }
     catch (err) {
