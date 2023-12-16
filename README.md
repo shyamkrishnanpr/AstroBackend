@@ -57,6 +57,24 @@ Run the following command to start the Node Js Backend server.
  
 ```
 
+
+## API Reference
+
+#### POST API to Register Astrologer
+
+```http
+  POST /api/astrologers/register
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `name` | `string` | **Required**. Astrologer's name |
+| `gender` | `string` | **Required**. Astrologer's gender. |
+| `email` | `string` | **Required**. Astrologer's email address |
+| `languages` | `array of string` | **Required**. Languages |
+| `specialties` | `array of string` | **Required**. Specialties. |
+
+
 #### Conclusion
 
 Thank you for following these deployment instructions to set up the Node JS project. By following these steps, you've successfully configured the Backend components.
