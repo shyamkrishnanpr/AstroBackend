@@ -50,7 +50,7 @@ Run the following command to install the required packages locally for the proje
 
 #### Step 5: Start the Backend Server
 
-Run the following command to start the React frontend server.
+Run the following command to start the Node Js Backend server.
 
 ```bash
   npm run dev
